@@ -9,4 +9,6 @@ If you still can't get it running, then you shouldn't run a server.
 Third party tools installed:
 UO Architect Server
 
+For best results, use a web server and configure all URL's and SQL files properly.
+
 /Taran
