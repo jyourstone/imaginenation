@@ -1,7 +1,7 @@
 Imagine Nation
 =============
 
-Scripts, core files and statics for the RunUO server Imagine Nation.
+Scripts, core files and statics for the RunUO server Imagine Nation. 
 Using RunUO SVN version 836 as of 2012-02-26, although heavily modified.
 
 I will NOT offer any support for this. If you can't compile and get it running, use google.
