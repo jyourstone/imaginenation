@@ -1,0 +1,1 @@
+XMLQuestNPC/UNEQUIP,Helm,Delete/UNEQUIP,OuterTorso,Delete/UNEQUIP,MiddleTorso,delete/UNEQUIP,Shirt,Delete/UNEQUIP,OuterLegs,delete/UNEQUIP,Pants,delete/UNEQUIP,shoes,delete

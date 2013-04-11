@@ -1,0 +1,85 @@
+<?xml version="1.0" standalone="yes"?>
+<XmlQuestNPC>
+  <NPC>
+    <Name>Maris</Name>
+    <Running>True</Running>
+    <ProximityRange>3</ProximityRange>
+    <ResetRange>16</ResetRange>
+    <NoTriggerOnCarried>Mongskeet! | ATTACHMENT,Mongskeet!,XMLQuestAttachment</NoTriggerOnCarried>
+    <AllowGhost>False</AllowGhost>
+    <SpeechPace>10</SpeechPace>
+    <ResetTime>0.25</ResetTime>
+    <SpeechEntries>5</SpeechEntries>
+  </NPC>
+  <SpeechEntry>
+    <EntryNumber>0</EntryNumber>
+    <ID>0</ID>
+    <Text>Aah, a fresh face.  Are you here to take the accuracy test to reclaim your spellbook?</Text>
+    <DependsOn>-2</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>10</EntryNumber>
+    <ID>10</ID>
+    <Keywords>yes,sure,i am,indeed,aye,yep,yeah,yea,si</Keywords>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+    <Gump>GUMP,Magic Accuracy Training,4/Sorry for all the hassle, but we must make sure that mages have a certain degree of accuracy with their spells before letting them roam the streets.  To prove that you know how to control the direction of your spells, use your 'magic arrow' spell to shoot down 20 mongbat illusions upstairs in the tower.;I'll show you how accurate I am!;acceptquest;This is an outrage!  I demand my spellbook back immediately!;angrydecline;Give me my book back or I'll blast your bones!;threatendecline</Gump>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>20</EntryNumber>
+    <ID>20</ID>
+    <Text>Again, I apologize, but this is the law of Britain. </Text>
+    <Keywords>angrydecline</Keywords>
+    <DependsOn>10</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>30</EntryNumber>
+    <ID>30</ID>
+    <Text>HaHaHa! With what? Magic Arrows? Or perhaps a fireball like this one?</Text>
+    <Keywords>threatendecline</Keywords>
+    <Action>SETONTRIGMOB/DAMAGE,10/MEFFECT,14036,3</Action>
+    <DependsOn>10</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>40</EntryNumber>
+    <ID>40</ID>
+    <Text>Very well. Go to the second floor of the tower and enter through the green door.  You'll receive your spellbook after your 20th kill.</Text>
+    <Keywords>acceptquest</Keywords>
+    <Action>GIVE/&lt;questholder/autoreward/true/notestring/Shoot down 20 mongbat illusions in the Spell Accuracy Training Room on the 2nd floor of the Britain North Mage tower to reclaim your spellbook./Objective1/KILLNAMED,Mongskeet,20/Name/Mongskeet!/TitleString/Mongskeet!/Description1/Shoot 20 Mongbat Illusions/Repeatable/False/RewardString/@spellbook/content/18446744073709551615/LootType/Blessed/Crafter/{GETONTRIGMOB,Serial}</Action>
+    <DependsOn>10</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+</XmlQuestNPC>

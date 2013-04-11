@@ -1,0 +1,95 @@
+<?xml version="1.0" standalone="yes"?>
+<XmlQuestNPC>
+  <NPC>
+    <Name>Yancey</Name>
+    <Running>True</Running>
+    <ProximityRange>3</ProximityRange>
+    <ResetRange>16</ResetRange>
+    <NoTriggerOnCarried>The Beastmen's Leaders | ATTACHMENT,The BeastMen's Leaders,XmlQuestAttachment</NoTriggerOnCarried>
+    <AllowGhost>False</AllowGhost>
+    <SpeechPace>10</SpeechPace>
+    <ResetTime>0.416666666666667</ResetTime>
+    <ConfigFile>BeastManLeaders</ConfigFile>
+    <SpeechEntries>6</SpeechEntries>
+  </NPC>
+  <SpeechEntry>
+    <EntryNumber>1</EntryNumber>
+    <ID>1</ID>
+    <Text>BWAAAH!</Text>
+    <DependsOn>-2</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>10</EntryNumber>
+    <ID>10</ID>
+    <Text>Oh, phew!  I thought you were one of the beastmen... Say, would you do me a favor?</Text>
+    <DependsOn>1</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>20</EntryNumber>
+    <ID>20</ID>
+    <Keywords>yes,yep,yeah,yeah,sure,ok,aye,nod</Keywords>
+    <DependsOn>10</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+    <Gump>GUMP,The Root of the Problem,4/I was sent on a scouting mission to see if I could find out who's controlling this beastman army, and I've found out!  The problem is, I'm too scared to do anything about it, but YOU look pretty brave.  There's a house far ahead with the beastmen's leaders inside.  It would be a great blow if you were to take them out, but it will be a dangerous task.;I'll do it!;accept;I'm scared too!;decline</Gump>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>30</EntryNumber>
+    <ID>30</ID>
+    <Text>Aah, a chicken after my own heart.  Lets roast marshmallows while we wait for rescue.</Text>
+    <Keywords>decline</Keywords>
+    <DependsOn>20</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>40</EntryNumber>
+    <ID>40</ID>
+    <Text>You're a braver person than I.  Kill the leaders and you'll surely receive a reward for your deeds.</Text>
+    <Keywords>accept</Keywords>
+    <Action>GIVE/&lt;questholder/name/The Beastmen's Leaders/notestring/Kill the leaders of the beastmen army to cripple their military advantage. Repeatable every 4 Hours/autoreward/true/canseereward/false/repeatable/true/nextrepeatable/04:00:00/titlestring/Kill the Beastmen Leaders/Objective1/KILLNAMED,The Archivist/Objective2/KILLNAMED,Shadowy Advisor/Objective3/KILLNAMED,Beastman Commander/Objective4/KILLNAMED,Dr. Moreau/rewardstring/@bag/hue/1171/ADD/&lt;gold/amount/1000&gt;/ADD/bagofreagents/ADD/&lt;bandana/hue/2523/name/Mercenary Bandana&gt;/ADD,.2/{RNDLIST,&lt;leatherchest/hue/1174/name/Mercenary leather armor&gt;,&lt;leatherarms/hue/1174/name/Mercenary leather arms&gt;,&lt;Leathergloves/hue/1174/name/Mercenary leather gloves&gt;,&lt;leathergorget/hue/1174/name/Mercenary leather gorget&gt;,&lt;leatherlegs/hue/1174/name/Mercenary leather legs&gt;}/ADD/&lt;{RNDLIST,diamond,emerald,ruby,citrine,sapphire,starsapphire,amber}/amount/RND,1,5&gt;/ADD/&lt;{RNDLIST,diamond,emerald,ruby,citrine,sapphire,starsapphire,amber}/amount/RND,1,5&gt;/ADD/&lt;{RNDLIST,diamond,emerald,ruby,citrine,sapphire,starsapphire,amber}/amount/RND,1,5&gt;/ADD/&lt;WEAPON,{RND,2,4},{RND,4,5}&gt;/ADD/&lt;WEAPON,{RND,2,4},{RND,4,5}&gt;/ADD/&lt;WEAPON,{RND,2,4},{RND,4,5}&gt;/ADD/&lt;ARMOR,{RND,2,4},{RND,4,5}&gt;/ADD/&lt;ARMOR,{RND,2,4},{RND,4,5}&gt;/ADD/&lt;ARMOR,{RND,2,4},{RND,4,5}&gt;&gt;</Action>
+    <DependsOn>20</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>0</EntryNumber>
+    <ID>0</ID>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+</XmlQuestNPC>

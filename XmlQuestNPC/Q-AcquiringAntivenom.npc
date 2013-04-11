@@ -1,0 +1,85 @@
+<?xml version="1.0" standalone="yes"?>
+<XmlQuestNPC>
+  <NPC>
+    <Name>Amissa</Name>
+    <Running>True</Running>
+    <ProximityRange>3</ProximityRange>
+    <ResetRange>16</ResetRange>
+    <NoTriggerOnCarried>Acquiring Antivenom</NoTriggerOnCarried>
+    <AllowGhost>False</AllowGhost>
+    <SpeechPace>10</SpeechPace>
+    <ResetTime>0,25</ResetTime>
+    <ConfigFile>Q-AcquiringAntivenom</ConfigFile>
+    <SpeechEntries>5</SpeechEntries>
+  </NPC>
+  <SpeechEntry>
+    <EntryNumber>0</EntryNumber>
+    <ID>0</ID>
+    <Text>Oh, praise the gods, could you help me?</Text>
+    <DependsOn>-2</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>10</EntryNumber>
+    <ID>10</ID>
+    <Keywords>yes,sure,ok,aye,si,yep,yeah,okay,help</Keywords>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+    <Gump>GUMP,Acquiring Antivenom,4/I'm a damn fool to be adventuring at my age.  I'm trying to map the uncharted deserts of this area, and ran into a massive clutch of scorpions on top of this ridge.  One of them stung me good and the cure potions I have don't seem to be helping.  I have my alchemy set with me though and I think if I could get a sample of the venom from their king, I could whip up an anti-venom.  Would you be so kind as to bring me his stinger?  Be careful though, they're very mean.;I'll get it for you.;accept;That sounds too scary for me.;decline;Enjoy your slow and painful death.;mock</Gump>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>20</EntryNumber>
+    <ID>20</ID>
+    <Text>Oh how cruel the gods are!  I prayed for an angel and they sent me a devil.</Text>
+    <Keywords>mock</Keywords>
+    <DependsOn>10</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>30</EntryNumber>
+    <ID>30</ID>
+    <Text>What? You can't just leave me here!  At least send some help!</Text>
+    <Keywords>decline</Keywords>
+    <DependsOn>10</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>40</EntryNumber>
+    <ID>40</ID>
+    <Text>My hero!</Text>
+    <Keywords>accept</Keywords>
+    <Action>SETONTRIGMOB/ADD/&lt;QuestHolder/name/Acquiring Antivenom/AutoReward/True/CanSeeReward/False/Description1/Collect the Scorpion King's Stinger/NextRepeatable/01:00:00/NoteString/Collect the scorpion king's stinger so the foolish adventurer can concoct an antivenom for their nasty scorpion sting. Give them the stinger to complete the quest./Objective1/GIVENAMED,Amissa,Scorpion King's Stinger/TitleString/Acquiring the Antivenom/Expiration/1/RewardString/@backpack/name/Scorpion-hide Pack/ADD/GreaterCurePotion/ADD/GreaterCurePotion/ADD/GreaterCurePotion/ADD/Gold,{RND,500,2000}/ADD,.2/&lt;femalestuddedchest/hue/1171/name/Scorpion Harness/BaseArmorRating/30&gt;/ADD,.5/&lt;item,9657/name/{RNDLIST,Baby Scorpion,Baby Scorpion Prince/hue/903,Baby Scorpion Queen/hue/1176,Baby Scorpion King/hue/1157}&gt;</Action>
+    <DependsOn>10</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+</XmlQuestNPC>

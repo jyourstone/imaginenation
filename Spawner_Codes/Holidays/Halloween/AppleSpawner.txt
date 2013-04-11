@@ -1,0 +1,27 @@
+MinDelay: 00:00:10
+MaxDelay: 00:00:30
+SequentialSpawn: 1
+SpawnRange: 0
+
+Max.Per.Sub ### Spawn
+
+1.1.1 #1#
+Item,2512/Movable/False/Z/INC,1/ATTACH/XmlUse/ATTACHMENT,XmlUse,,MaxUses/{RND,1,8}/ATTACHMENT,XmlUse,,Refractory/00:00:{RNDLIST,10,15}/ATTACHMENT,XmlUse,,RefractoryAction/@SETONTRIGMOB/SENDASCIIMSG,1,33/You must catch your breath before bobbing for more apples.
+
+1.1.1 #2#
+SETONSPAWN,1/ATTACHMENT,XmlUse,,SuccessAction/@SETONTRIGMOB/SENDASCIIMSG/{RNDLIST,You didn't even get close to catching an apple.,You nearly caught one that time!,You catch an apple but it slips back into the pool.,You manage to grab a rotten apple and spit it out immediately.,You get water in your nose and cough out the apple.}/ANIMATE,32
+
+1.1.1 #3#
+SETONSPAWN,1/ATTACHMENT,XmlUse,,MaxUsesAction/@SETONTRIGMOB/SENDASCIIMSG/You catch something from the bobbing pool!/ADD/<{RNDLIST,Apple,Apple,Apple,Apple,Bone,Bone,Bone,Bone,Bone,DaemonBone,Bone,Bone,Bone,Bone,LunarBone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,FishBones,TribalMask,HornedTribalMask,TribalMask/Itemid/5147,Apple,Apple,Apple,Apple,GoldRing/Itemid/12216/Layer/Helm/Hue/1163/Name/Luminous Eyes,
+
+Apple,Apple,Apple,Peach,Apple,Apple,Apple,Apple,Bone,Bone,Bone,Bone,Bone,DaemonBone,Bone,Bone,Bone,Bone,LunarBone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,FishBones,TribalMask,HornedTribalMask,TribalMask/Itemid/5147,Apple,Apple,Apple,Apple,GoldRing/Itemid/12216/Layer/Helm/Hue/1162/Name/Glowing Eyes,
+
+Apple,Apple,Apple,Peach,Apple,Apple,Apple,Apple,Bone,Bone,Bone,Bone,Bone,DaemonBone,Bone,Bone,Bone,Bone,LunarBone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,FishBones,TribalMask,HornedTribalMask,TribalMask/Itemid/5147,Apple,Apple,Apple,Apple,GoldRing/Itemid/12216/Layer/Helm/Hue/1161/Name/Blazing Eyes,
+
+Apple,Apple,Apple,Peach,Apple,Apple,Apple,Apple,Bone,Bone,Bone,Bone,Bone,DaemonBone,Bone,Bone,Bone,Bone,LunarBone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,FishBones,TribalMask,HornedTribalMask,TribalMask/Itemid/5147,Apple,Apple,Apple,Apple,GoldRing/Itemid/12216/Layer/Helm/Hue/1171/Name/Burning Eyes,Apple,Apple,Apple,Peach}> ;  SETONNEARBY,0,AppleSpawner,XMLSpawner/DoReset/True/Running/True
+
+1.1.1 #4#
+Apple/X/INC,{RND,-2,2}/Y/INC,{RND,-2,2}/Z/INC,-4
+
+1.1.1 #5#
+SETONTHIS/Running/False

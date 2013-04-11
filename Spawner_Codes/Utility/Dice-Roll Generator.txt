@@ -1,0 +1,1 @@
+xmlspawner/location/()/running/false/addspawn/@SETONNEARBY,3,*,PlayerMobile/MSG/DiceRoll: ({RND,1,6},{RND,1,6})

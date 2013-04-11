@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MustangCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List>
+    <anyType xsi:type="MustangInfo" BodyVal="204" Skill="80" Hue="1503" Name="Copper Mustang" ID="Copper" />
+    <anyType xsi:type="MustangInfo" BodyVal="204" Skill="75" Hue="2418" Name="Tan Mustang" ID="Tan" />
+	<anyType xsi:type="MustangInfo" BodyVal="200" Skill="95" Hue="1172" Name="Golden Palomino" ID="Gold" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="100" Hue="1171" Name="Daemon Mustang" ID="Daemon" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="85" Hue="1960" Name="Reactive Mustang" ID="Reactive" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="80" Hue="1151" Name="Ice Mustang" ID="Ice" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="100" Hue="1952" Name="Sapphire Mustang" ID="Sapphire" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="95" Hue="1175" Name="Silver Mustang" ID="Silver" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="90" Hue="1914" Name="Fire Mustang" ID="Fire" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="90" Hue="1109" Name="Blackrock Mustang" ID="Blackrock" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="85" Hue="2538" Name="Wizard Mustang" ID="Wizard" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="100" Hue="1959" Name="Peach Mustang" ID="Peach" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="80" Hue="1238" Name="Purple Mustang" ID="Purple" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="80" Hue="796" Name="Grey Mustang" ID="Grey" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="80" Hue="1218" Name="Bloodrock Mustang" ID="Bloodrock" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="80" Hue="1023" Name="Marsh Mustang" ID="Marsh" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="100" Hue="2969" Name="Oceanic Mustang" ID="Oceanic" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="90" Hue="1153" Name="Snow Mustang" ID="Snow" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="95" Hue="2504" Name="Blizzard Mustang" ID="Blizzard" />
+	<anyType xsi:type="MustangInfo" BodyVal="228" Skill="95" Hue="1175" Name="Goldergas Mustang" ID="Goldergas" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="80" Hue="2129" Name="Forest Mustang" ID="Forest" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="100" Hue="2961" Name="Adamantium Mustang" ID="Adamantium" />
+	<anyType xsi:type="MustangInfo" BodyVal="200" Skill="80" Hue="1907" Name="Shadow Mustang" ID="Shadow" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="80" Hue="1743" Name="Brown Mustang" ID="Brown" />
+	<anyType xsi:type="MustangInfo" BodyVal="226" Skill="75" Hue="1311" Name="Violet Mustang" ID="Violet" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="80" Hue="2301" Name="Granite Mustang" ID="Granite" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="90" Hue="2219" Name="Valorite Mustang" ID="Valorite" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="95" Hue="2881" Name="Emerald Mustang" ID="Emerald" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="85" Hue="1017" Name="Woodland Mustang" ID="Woodland" />
+	<anyType xsi:type="MustangInfo" BodyVal="204" Skill="75" Hue="690" Name="Blue Mustang" ID="Blue" />
+	<anyType xsi:type="MustangInfo" BodyVal="200" Skill="75" Hue="1617" Name="Orange Mustang" ID="Orange" />
+	<anyType xsi:type="MustangInfo" BodyVal="200" Skill="75" Hue="2001" Name="Verite Mustang" ID="Verite" />
+  </List>
+</MustangCollection>

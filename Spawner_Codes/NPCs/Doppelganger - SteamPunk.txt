@@ -1,0 +1,10 @@
+General:
+
+xtremedragon/bodyvalue/401/hue/1/name/Eru/NameHue/1176/HairItemID/5911/FacialHairItemID/-1/HairHue/1171/female/true/fame/0/karma/0/FireDamage/500/RangeFight/4
+/EQUIP/<boots/hue/1172/name/carbon-soled boots/movable/false>/EQUIP/<skirt/layer/outerlegs/name//Hue/1176/movable/false>/EQUIP/<halfapron/itemid/10128/layer/earrings/name/tinker's tool belt/hue/1176/movable/false>/EQUIP/<fullapron/layer/waist/hue/1172/name/tinker's apron/movable/false>/EQUIP/<studdedgorget/movable/false/hue/1172/name/>/EQUIP/<chainchest/movable/false/hue/1172/name//layer/shirt>/EQUIP/<doublet/hue/1176/movable/false/layer/innertorso>/EQUIP/<leathergloves/movable/false/hue/1176/name/tinker's gloves>/EQUIP/<heavycrossbow/movable/false/hue/1172/layer/firstvalid/name/pneumatic bolt-tosser>/EQUIP/<heatershield/movable/false/hue/1172/itemid/2594/name/naphthous beacon>
+
+
+Gauntlet Killer:
+
+xtremedragon/bodyvalue/401/hue/1/name/Eru's Wrath/NameHue/1176/HairItemID/5911/FacialHairItemID/-1/HairHue/1171/female/true/fame/0/karma/0/FireDamage/500/RangeFight/4/Combatant/GETONTRIGMOB,Serial/Location/(5185,1935,0)
+/EQUIP/<boots/hue/1172/name/carbon-soled boots/movable/false>/EQUIP/<skirt/layer/outerlegs/name//Hue/1176/movable/false>/EQUIP/<halfapron/itemid/10128/layer/earrings/name/tinker's tool belt/hue/1176/movable/false>/EQUIP/<fullapron/layer/waist/hue/1172/name/tinker's apron/movable/false>/EQUIP/<studdedgorget/movable/false/hue/1172/name/>/EQUIP/<chainchest/movable/false/hue/1172/name//layer/shirt>/EQUIP/<doublet/hue/1176/movable/false/layer/innertorso>/EQUIP/<leathergloves/movable/false/hue/1176/name/tinker's gloves>/EQUIP/<heavycrossbow/movable/false/hue/1172/layer/firstvalid/name/pneumatic bolt-tosser>/EQUIP/<heatershield/movable/false/hue/1172/itemid/2594/name/naphthous beacon>

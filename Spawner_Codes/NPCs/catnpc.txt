@@ -1,0 +1,34 @@
+1.1) SETONTHIS/Hue/{RNDLIST,1172,1173,1170,1237,1520,1550,1710,1750,1820,1840,1850,1870,1880,1890,1904,1908}
+
+1.2) Cougar/BodyValue/401/Hue/GETONTHIS,Hue/EQUIP/<Cloak/Movable/False/LootType/Blessed/Name//Hue/GETONTHIS,Hue/ItemID/15352>/HairItemID/{RND,8251,8253}/HairHue/GETONTHIS,Hue/Tamable/False/Female/True
+
+
+/Name/{RNDLIST,R'yerny,Ad'tor,En'em,End'tase,Y'orqua,E'banrad,Sw'imdan,Ina'ves,A'turves,Bl'danryn,End'ser'el,As'ad'iek,Urnoik'o,Lereinn'e,Naloin'e,Unteurd'l,Ghaoil'a,Ine'gha,E'dynor,Rak'ighto,Honec'm,A'emos,Buruilt'n,Asut's,Ril'ilda,Aldaull'ld,A'lerale,Undayl'd,An'ser,Serayv'a,Est'ight'iy,B'tonon,Estiag's,Sw'itund,C'enroth,P'onlor,Tin'ril'ar,At'cere,Nal'sul'iant,At'yer'ed,U'ineler,Unteass's,Ril'ril,Del'ard,A'waror,Ine'em'auss,Lyeaish'u,Om'pol'aen,Aleoir'e,Tr'banough,Atoigh'e,
+
+Baniert'd,Ageead'l,Deleynt'a,L'therryn,Vor'tore,Thr'morrod,Orm'ack'iw,Kalath'lt,O'radkel,O'ardan,Ris'aughy,Y'essgar,Unt'roth,Tiaeck's,I'ranhon,Endik'g,L'delhon,Und'raye,Ald'asa,O'acheng,Cer'im'az,Del'bely,An'nysu,Dar'age'oord,Tan'ard,Ver'ale,Om'mor,A'angorm,Delath'w,Vor'kime,A'yerech,R'awdar,O'verkal,En'sul'ald,Tas'im'ol,Eldeaph'i,Tr'turpol,O'tinald,Dra'bure,Sayeum'y,Gar'ald'al,Vor'tana,Rod'ale'oul,I'atim,Y'cheen,N'aden,Emaum'k,M'ristai,Nysoid'a,Therais'nt,Cer'nal'ek,Ildays'o,Qu'tinden,Echeygh't,Eton'a,Onauth'm,Os'ard,At'echy,Chr'ardeld,En'ler'uif,Uskiev's,O'erves,Eng'tori,V'arom,En'ler'oolt,En'ny,A'ineche,Ban'isi}
+
+
+Denguard:
+
+/DamageMin/25/DamageMax/45/SKILL,Tactics/275/SKILL,Wrestling/350/Dex/250/STR/200/HitsMaxSeed/150/Hits/150/EQUIP/<Doublet/Hue/2881>/EQUIP/<LeatherLegs/Hue/2881/Loottype/Blessed>/EQUIP/<HalfApron/LootType/Blessed/Hue/1172/ItemID/11112/name/Loincloth>/EQUIP/<Boots/Hue/1172/LootType/Blessed/ItemID/12228/Name/Woodland boots>/EQUIP/<LeatherArms/LootType/Blessed/Hue/1172/Name/Woodland arms/ItemID/11116>/EQUIP/<LeafShield/Loottype/Blessed>/EQUIP/<goldring/hue/1173/loottype/blessed/ItemID/11552/Name/Woodland dagger>/EQUIP/<LeatherGorget/Hue/1172/ItemID/11113/LootType/Blessed>/EQUIP/<BearMask/Hue/1172>/Title/the Denwatcher
+
+Chiefguard:
+
+/DamageMin/45/DamageMax/65/SKILL,Tactics/375/SKILL,Wrestling/400/Dex/300/STR/250/HitsMaxSeed/350/Hits/350/EQUIP/<Doublet/Hue/2967>/EQUIP/<LeatherLegs/Hue/2967/Loottype/Blessed>/EQUIP/<HalfApron/LootType/Blessed/Hue/2990/ItemID/11112/name/Loincloth>/EQUIP/<Boots/Hue/2990/LootType/Blessed/ItemID/12228/Name/Woodland boots>/EQUIP/<LeatherArms/LootType/Blessed/Hue/2990/Name/Woodland arms/ItemID/11116>/EQUIP/<goldring/hue/2990/loottype/blessed/ItemID/11570/Name/Woodland dagger>/EQUIP/<LeatherGorget/Hue/2990/ItemID/11113/LootType/Blessed>/EQUIP/<BearMask/Hue/2990>
+
+LUMBERJACK:
+/STR/150/DEX/150/SKILL,Tactics/100/SKILL,Wrestling/150/HitsMaxSeed/125/Hits/125/EQUIP/<LeatherChest/ItemID/12229/LootType/Blessed/Hue/1172/Name/Harvester's leather jerkin>/EQUIP/<LeatherArms/LootType/Blessed/ItemID/12232/Hue/1172/Name/Harvester's sleeves>/EQUIP/<LeatherLegs/ItemID/12233/LootType/Blessed/Hue/1172>/EQUIP/<Boots/Hue/2881>/EQUIP/<Bandana/Hue/2881>/EQUIP/<HalfApron/Hue/2881/LootType/Blessed/Name/Loincloth/ItemID/11112>/EQUIP/Hatchet/Title/the Gatherer
+
+
+ShopKeeper:
+
+
+
+PLACEHOLDER MainCharacter:
+/Str/500/DEX/500/MinDamage/50/MaxDamage/60/SKILL,Wrestling/450/SKILL,Tactics/400/HitsMaxSeed/600/Hits/600/EQUIP/<HeavyPlateJingasa/Name//LootType/Blessed>/EQUIP/<Doublet/ItemID/12662/Hue/2960/LootType/Blessed/Name/Patterned shirt>/EQUIP/<HalfApron/Hue/2960/LootType/Blessed/ItemID/11112>/EQUIP/<LeatherLegs/ItemID/10118/Hue/2009/LootType/Blessed/Name/Reinforced woodland legs>/EQUIP/<Tekagi/LootType/Blessed/Hue/2990/Name/Claws>/UNEQUIP,Cloak,Delete/EQUIP/<Cloak/Movable/False/LootType/Blessed/Name//Hue/1150/ItemID/15352>/Hue/1150
+
+
+
+
+
+

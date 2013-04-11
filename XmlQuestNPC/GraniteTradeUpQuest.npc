@@ -1,0 +1,83 @@
+<?xml version="1.0" standalone="yes"?>
+<XmlQuestNPC>
+  <NPC>
+    <Name>Daedalus</Name>
+    <Running>True</Running>
+    <ProximityRange>3</ProximityRange>
+    <ResetRange>16</ResetRange>
+    <AllowGhost>False</AllowGhost>
+    <SpeechPace>10</SpeechPace>
+    <ResetTime>0.0833333333333333</ResetTime>
+    <ConfigFile>GraniteTradeUpQuest</ConfigFile>
+    <SpeechEntries>5</SpeechEntries>
+  </NPC>
+  <SpeechEntry>
+    <EntryNumber>0</EntryNumber>
+    <ID>0</ID>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>10</EntryNumber>
+    <ID>10</ID>
+    <Text>Hail, fellow miner!</Text>
+    <Condition>AMOUNTCARRIED,granite&gt;9</Condition>
+    <DependsOn>-2</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>20</EntryNumber>
+    <ID>20</ID>
+    <Keywords>hail,hai,hi,hello,hullo,sup,howdy,yo,aye,yes,huh,what,yep,yeah</Keywords>
+    <DependsOn>10</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+    <Gump>GUMP,Trading Up,4/I see you have a heavy load of granite, there.  As a trader in discount stoneware, I need all the cheap granite I can get!  If you're willing to give me 10 of those plain granite, I'll give you one of these higher quality specimens.  Do we have a deal?;That sounds fair!;accept;Keep your hands off my stones!;decline</Gump>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>30</EntryNumber>
+    <ID>30</ID>
+    <Text>Pleasure doing business with you!</Text>
+    <Keywords>accept</Keywords>
+    <Action>TAKEBYTYPE,1,1/granite ; TAKEBYTYPE,1,1/granite ; TAKEBYTYPE,1,1/granite ; TAKEBYTYPE,1,1/granite ; TAKEBYTYPE,1,1/granite ; TAKEBYTYPE,1,1/granite ; TAKEBYTYPE,1,1/granite ; TAKEBYTYPE,1,1/granite ; TAKEBYTYPE,1,1/granite ; TAKEBYTYPE,1,1/granite ; GIVE/{RNDLIST,oldcoppergranite,silvergranite,goldgranite,rosegranite,veritegranite,valoritegranite}</Action>
+    <Condition>AMOUNTCARRIED,granite&gt;9</Condition>
+    <DependsOn>20</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>40</EntryNumber>
+    <ID>40</ID>
+    <Text>Phooey!</Text>
+    <Keywords>decline</Keywords>
+    <DependsOn>20</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+</XmlQuestNPC>

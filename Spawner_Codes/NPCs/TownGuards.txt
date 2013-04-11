@@ -1,0 +1,4 @@
+Replace #HUE with hue number and #NAME with name
+The cloak looks better in a darker shade of the hue
+
+Orderguard/name/#NAME Guard/title//fame/1000/SAY/Move along citizen!/CurrentSpeed/4/STR/1200/hitsmaxseed/1200/hits/1200/hairhue/#HUE/UNEQUIP,OneHanded,delete/UNEQUIP,TwoHanded,delete/UNEQUIP,Shoes,delete/UNEQUIP,Pants,delete/UNEQUIP,Shirt,delete/UNEQUIP,Helm,delete/UNEQUIP,Gloves,delete/UNEQUIP,Neck,delete/UNEQUIP,Waist,delete/UNEQUIP,InnerTorso,delete/UNEQUIP,MiddleTorso,delete/UNEQUIP,Arms,delete/UNEQUIP,Cloak,delete/UNEQUIP,OuterTorso,delete/UNEQUIP,OuterLegs,delete/UNEQUIP,InnerLegs,delete/EQUIP/<vikingsword/hue/#HUE/loottype/blessed>/EQUIP/<buckler/itemid/7108/hue/#HUE/name/Order Shield/loottype/blessed>/EQUIP/<cloak/hue/#HUE/loottype/blessed>/EQUIP/<robe/hue/#HUE/loottype/blessed>/EQUIP/<platelegs/hue/#HUE/loottype/blessed>/EQUIP/<plategloves/hue/#HUE/loottype/blessed>/EQUIP/<plategorget/hue/#HUE/loottype/blessed>

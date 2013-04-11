@@ -1,0 +1,27 @@
+[
+    {"type": "TOWN", "name": "Yew<br />(City of Justice)", "lat": "996", "lon": "535"},
+	{"type": "TOWN", "name": "Britain<br />(City of Compassion)", "lat": "1626", "lon": "1527"},
+	{"type": "TOWN", "name": "Skara Brae<br />(City of Spirituality)", "lat": "2193", "lon": "608"},
+	{"type": "TOWN", "name": "Cove<br />(City of Love)", "lat": "1211", "lon": "2261"},
+	{"type": "TOWN", "name": "Minoc<br />(City of Sacrifice)", "lat": "503", "lon": "2489"},
+    {"type": "TOWN", "name": "Vesper<br />(City of Industry)", "lat": "826", "lon": "2935"},
+    {"type": "TOWN", "name": "Nujel'm<br />(City of Pleasure)", "lat": "1242", "lon": "3711"},
+	{"type": "TOWN", "name": "Moonglow<br />(City of Honesty)", "lat": "1133", "lon": "4443"},
+    {"type": "TOWN", "name": "Buccaneer's Den", "lat": "2167", "lon": "2717"},
+    {"type": "TOWN", "name": "Trinsic<br />(City of Honor)", "lat": "2766", "lon": "1892"},
+	{"type": "TOWN", "name": "Magincia<br />(City of Humility)", "lat": "2159", "lon": "3715"},
+	{"type": "TOWN", "name": "Ocllo", "lat": "2565", "lon": "3653"},
+	{"type": "TOWN", "name": "Serpent's Hold<br />(Stronghold of Courage)", "lat": "3444", "lon": "2978"},
+	{"type": "TOWN", "name": "Jhelom<br />(City of Valor)", "lat": "3794", "lon": "1398"},
+	{"type": "TOWN", "name": "Entrace to Wind<br />(City of Magicka)", "lat": "890", "lon": "1363"},
+    {"type": "DUNGEON", "name": "Shame", "lat": "1565", "lon": "511"},
+	{"type": "DUNGEON", "name": "Destard", "lat": "2642", "lon": "1176"},
+	{"type": "DUNGEON", "name": "Despise", "lat": "1090", "lon": "1297"},
+	{"type": "DUNGEON", "name": "Ice", "lat": "90", "lon": "1995"},
+	{"type": "DUNGEON", "name": "Wrong", "lat": "225", "lon": "2042"},
+	{"type": "DUNGEON", "name": "Covetous", "lat": "923", "lon": "2499"},
+	{"type": "DUNGEON", "name": "Fire", "lat": "3412", "lon": "2923"},
+	{"type": "DUNGEON", "name": "Deceit", "lat": "435", "lon": "4112"},
+	{"type": "DUNGEON", "name": "Hythloth", "lat": "3820", "lon": "4723"}
+]
+

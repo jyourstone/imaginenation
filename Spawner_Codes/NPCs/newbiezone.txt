@@ -1,0 +1,35 @@
+Lizard Minion:
+
+lavalizard/hue/1159/name/Lizard Minion
+
+
+Beastman Controller:
+
+savageshaman/name/Beastman Controller/title//UNEQUIP,helm,delete/UNEQUIP,arms,delete/UNEQUIP,pants,delete/EQUIP/<orcishkinmask/loottype/blessed/hue/1171>/EQUIP/<robe/hue/2990>/EQUIP/<gnarledstaff/hue/1171/loottype/blessed>/ADD,.05/<static,0/movable/true/name/Orb of Beastman Control/itemid/3629>
+
+UNEQUIP'd Quest NPC:
+
+XMLQuestNPC,0/configfile/questname/loadconfig/true/yellowhealthbar/true/str/100/hits/100/karma/2000/UNEQUIP,helm,delete/UNEQUIP,arms,delete/UNEQUIP,gloves,delete/UNEQUIP,shirt,delete/UNEQUIP,MiddleTorso,delete/UNEQUIP,OuterTorso,delete/UNEQUIP,pants,delete/UNEQUIP,shoes,delete/UNEQUIP,hair,delete/UNEQUIP,facialhair,delete
+
+Give questholder with skillbook reward:
+
+GIVE/<QuestHolder/AutoReward/True/NoteString/Defeat Don Diego, the fencing master, in order to learn about the art of fencing./Objective1/KILLNAMED,Don Diego,1/TitleString/Fencing Mastery/RewardString/@SkillBook/Bonus/{RND,1,2}/RequiresOwner/True/SetOwnerOnPickup/True/SkillName/Wrestling>
+
+RANDOM BEASTMAN WEAPONS:
+
+Lessers:
+
+/ADD,.005/<static,0/itemid/9556/movable/true/name/Beastman Blade>/ADD,.005/<static,0/itemid/9564/movable/true/name/Beastman Club>/ADD,.005/<static,0/itemid/9595/movable/true/name/Beastman Skewer>/ADD,.005/<static,0/itemid/10155/movable/true/name/Beastman Claws>
+
+Mid:
+
+/ADD,.01/<static,0/itemid/9556/movable/true/name/Beastman Blade>/ADD,.01/<static,0/itemid/9564/movable/true/name/Beastman Club>/ADD,.01/<static,0/itemid/9595/movable/true/name/Beastman Skewer>/ADD,.01/<static,0/itemid/10155/movable/true/name/Beastman Claws>
+
+High:
+
+/ADD,.02/<static,0/itemid/9556/movable/true/name/Beastman Blade>/ADD,.02/<static,0/itemid/9564/movable/true/name/Beastman Club>/ADD,.02/<static,0/itemid/9595/movable/true/name/Beastman Skewer>/ADD,.02/<static,0/itemid/10155/movable/true/name/Beastman Claws>
+
+BOSS:
+
+/ADD,.04/<static,0/itemid/9556/movable/true/name/Beastman Blade>/ADD,.04/<static,0/itemid/9564/movable/true/name/Beastman Club>/ADD,.04/<static,0/itemid/9595/movable/true/name/Beastman Skewer>/ADD,.04/<static,0/itemid/10155/movable/true/name/Beastman Claws>
+

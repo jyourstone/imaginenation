@@ -1,0 +1,1 @@
+/UNEQUIP,OneHanded,delete/UNEQUIP,TwoHanded,delete/UNEQUIP,Shoes,delete/UNEQUIP,Pants,delete/UNEQUIP,Shirt,delete/UNEQUIP,Helm,delete/UNEQUIP,Gloves,delete/UNEQUIP,Neck,delete/UNEQUIP,Waist,delete/UNEQUIP,InnerTorso,delete/UNEQUIP,MiddleTorso,delete/UNEQUIP,Arms,delete/UNEQUIP,Cloak,delete/UNEQUIP,OuterTorso,delete/UNEQUIP,OuterLegs,delete/UNEQUIP,InnerLegs,delete

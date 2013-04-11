@@ -1,0 +1,225 @@
+<?xml version="1.0" standalone="yes"?>
+<XmlQuestNPC>
+  <NPC>
+    <Name>Ferryman</Name>
+    <Running>True</Running>
+    <ProximityRange>3</ProximityRange>
+    <ResetRange>16</ResetRange>
+    <AllowGhost>False</AllowGhost>
+    <SpeechPace>10</SpeechPace>
+    <ResetTime>0,0333333333333333</ResetTime>
+    <ConfigFile>FerrySystem</ConfigFile>
+    <SpeechEntries>14</SpeechEntries>
+  </NPC>
+  <SpeechEntry>
+    <EntryNumber>0</EntryNumber>
+    <ID>0</ID>
+    <Keywords>boat,board,ferry,sail</Keywords>
+    <Action>SETONTRIGMOB/Location/{GETONNEARBY,10,FerryBoat,WayPoint,Location}</Action>
+    <Condition>AMOUNTCARRIED,BoardingVoucher&gt;0</Condition>
+    <DependsOn>-1</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+    <Gump>GUMP,Choose Your Destination,4/For the price of one boarding voucher, I will take you to your destination.  Where do you wish to go?;Nowhere, really.;Cancel;Trinsic Barracks;TrinsicBarracks;Trinsic;TrinsicTown;Britain;Britain;Cove;Cove;Vesper;Vesper;Nujel'm;Nujelm;Moonglow;Moonglow;Ocllo;Ocllo;Buccaneer's Den;BucsDen;Jhelom;Jhelom;Skara Brae;SkaraBrae;Papua;Papua</Gump>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>5</EntryNumber>
+    <ID>5</ID>
+    <Keywords>Cancel</Keywords>
+    <Action>SETONTRIGMOB/Location/{GETONNEARBY,10,FerryDock,WayPoint,False,Location}</Action>
+    <Condition>GETONTRIGMOB,X &lt; 3051 &amp; GETONTRIGMOB,X &gt; 3047 &amp; GETONTRIGMOB,Y &lt; 823 &amp; GETONTRIGMOB,Y &gt; 813</Condition>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>10</EntryNumber>
+    <ID>10</ID>
+    <Keywords>TrinsicBarracks</Keywords>
+    <Action>TAKEBYTYPE,1,1/BoardingVoucher ; SETONTRIGMOB/SENDASCIIMSG,1,43/You take the ferry to your destination!  Man is it quick!/Location/(2007,3040,1)</Action>
+    <Condition>AMOUNTCARRIED,BoardingVoucher&gt;0 &amp; GETONTRIGMOB,X &lt; 3051 &amp; GETONTRIGMOB,X &gt; 3047 &amp; GETONTRIGMOB,Y &lt; 823 &amp; GETONTRIGMOB,Y &gt; 813</Condition>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>11</EntryNumber>
+    <ID>11</ID>
+    <Keywords>TrinsicTown</Keywords>
+    <Action>TAKEBYTYPE,1,1/BoardingVoucher ; SETONTRIGMOB/SENDASCIIMSG,1,43/You take the ferry to your destination!  Man is it quick!/Location/(2084,2855,-3)</Action>
+    <Condition>AMOUNTCARRIED,BoardingVoucher&gt;0 &amp; GETONTRIGMOB,X &lt; 3051 &amp; GETONTRIGMOB,X &gt; 3047 &amp; GETONTRIGMOB,Y &lt; 823 &amp; GETONTRIGMOB,Y &gt; 813</Condition>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>12</EntryNumber>
+    <ID>12</ID>
+    <Keywords>Britain</Keywords>
+    <Action>TAKEBYTYPE,1,1/BoardingVoucher ; SETONTRIGMOB/SENDASCIIMSG,1,43/You take the ferry to your destination!  Man is it quick!/Location/(1482,1770,-2)</Action>
+    <Condition>AMOUNTCARRIED,BoardingVoucher&gt;0 &amp; GETONTRIGMOB,X &lt; 3051 &amp; GETONTRIGMOB,X &gt; 3047 &amp; GETONTRIGMOB,Y &lt; 823 &amp; GETONTRIGMOB,Y &gt; 813</Condition>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>13</EntryNumber>
+    <ID>13</ID>
+    <Keywords>Cove</Keywords>
+    <Action>TAKEBYTYPE,1,1/BoardingVoucher ; SETONTRIGMOB/SENDASCIIMSG,1,43/You take the ferry to your destination!  Man is it quick!/Location/(2257,1170,-2)</Action>
+    <Condition>AMOUNTCARRIED,BoardingVoucher&gt;0 &amp; GETONTRIGMOB,X &lt; 3051 &amp; GETONTRIGMOB,X &gt; 3047 &amp; GETONTRIGMOB,Y &lt; 823 &amp; GETONTRIGMOB,Y &gt; 813</Condition>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>14</EntryNumber>
+    <ID>14</ID>
+    <Keywords>Vesper</Keywords>
+    <Action>TAKEBYTYPE,1,1/BoardingVoucher ; SETONTRIGMOB/SENDASCIIMSG,1,43/You take the ferry to your destination!  Man is it quick!/Location/(3044,822,-3)</Action>
+    <Condition>AMOUNTCARRIED,BoardingVoucher&gt;0 &amp; GETONTRIGMOB,X &lt; 3051 &amp; GETONTRIGMOB,X &gt; 3047 &amp; GETONTRIGMOB,Y &lt; 823 &amp; GETONTRIGMOB,Y &gt; 813</Condition>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>15</EntryNumber>
+    <ID>15</ID>
+    <Keywords>Nujelm</Keywords>
+    <Action>TAKEBYTYPE,1,1/BoardingVoucher ; SETONTRIGMOB/SENDASCIIMSG,1,43/You take the ferry to your destination!  Man is it quick!/Location/(3805,1280,5)</Action>
+    <Condition>AMOUNTCARRIED,BoardingVoucher&gt;0 &amp; GETONTRIGMOB,X &lt; 3051 &amp; GETONTRIGMOB,X &gt; 3047 &amp; GETONTRIGMOB,Y &lt; 823 &amp; GETONTRIGMOB,Y &gt; 813</Condition>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>16</EntryNumber>
+    <ID>16</ID>
+    <Keywords>Moonglow</Keywords>
+    <Action>TAKEBYTYPE,1,1/BoardingVoucher ; SETONTRIGMOB/SENDASCIIMSG,1,43/You take the ferry to your destination!  Man is it quick!/Location/(4426,1025,-2)</Action>
+    <Condition>AMOUNTCARRIED,BoardingVoucher&gt;0 &amp; GETONTRIGMOB,X &lt; 3051 &amp; GETONTRIGMOB,X &gt; 3047 &amp; GETONTRIGMOB,Y &lt; 823 &amp; GETONTRIGMOB,Y &gt; 813</Condition>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>17</EntryNumber>
+    <ID>17</ID>
+    <Keywords>Ocllo</Keywords>
+    <Action>TAKEBYTYPE,1,1/BoardingVoucher ; SETONTRIGMOB/SENDASCIIMSG,1,43/You take the ferry to your destination!  Man is it quick!/Location/(3601,2643,1)</Action>
+    <Condition>AMOUNTCARRIED,BoardingVoucher&gt;0 &amp; GETONTRIGMOB,X &lt; 3051 &amp; GETONTRIGMOB,X &gt; 3047 &amp; GETONTRIGMOB,Y &lt; 823 &amp; GETONTRIGMOB,Y &gt; 813</Condition>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>18</EntryNumber>
+    <ID>18</ID>
+    <Keywords>BucsDen</Keywords>
+    <Action>TAKEBYTYPE,1,1/BoardingVoucher ; SETONTRIGMOB/SENDASCIIMSG,1,43/You take the ferry to your destination!  Man is it quick!/Location/(2759,2167,-2)</Action>
+    <Condition>AMOUNTCARRIED,BoardingVoucher&gt;0 &amp; GETONTRIGMOB,X &lt; 3051 &amp; GETONTRIGMOB,X &gt; 3047 &amp; GETONTRIGMOB,Y &lt; 823 &amp; GETONTRIGMOB,Y &gt; 813</Condition>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>19</EntryNumber>
+    <ID>19</ID>
+    <Keywords>Jhelom</Keywords>
+    <Action>TAKEBYTYPE,1,1/BoardingVoucher ; SETONTRIGMOB/SENDASCIIMSG,1,43/You take the ferry to your destination!  Man is it quick!/Location/(1512,3709,-2)</Action>
+    <Condition>AMOUNTCARRIED,BoardingVoucher&gt;0 &amp; GETONTRIGMOB,X &lt; 3051 &amp; GETONTRIGMOB,X &gt; 3047 &amp; GETONTRIGMOB,Y &lt; 823 &amp; GETONTRIGMOB,Y &gt; 813</Condition>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>20</EntryNumber>
+    <ID>20</ID>
+    <Keywords>SkaraBrae</Keywords>
+    <Action>TAKEBYTYPE,1,1/BoardingVoucher ; SETONTRIGMOB/SENDASCIIMSG,1,43/You take the ferry to your destination!  Man is it quick!/Location/(676,2228,-3)</Action>
+    <Condition>AMOUNTCARRIED,BoardingVoucher&gt;0 &amp; GETONTRIGMOB,X &lt; 3051 &amp; GETONTRIGMOB,X &gt; 3047 &amp; GETONTRIGMOB,Y &lt; 823 &amp; GETONTRIGMOB,Y &gt; 813</Condition>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>21</EntryNumber>
+    <ID>21</ID>
+    <Keywords>Papua</Keywords>
+    <Action>TAKEBYTYPE,1,1/BoardingVoucher ; SETONTRIGMOB/SENDASCIIMSG,1,43/You take the ferry to your destination!  Man is it quick!/Location/(5832,3240,2)</Action>
+    <Condition>AMOUNTCARRIED,BoardingVoucher&gt;0 &amp; GETONTRIGMOB,X &lt; 3051 &amp; GETONTRIGMOB,X &gt; 3047 &amp; GETONTRIGMOB,Y &lt; 823 &amp; GETONTRIGMOB,Y &gt; 813</Condition>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+</XmlQuestNPC>

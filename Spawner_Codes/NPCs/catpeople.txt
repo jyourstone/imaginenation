@@ -1,0 +1,30 @@
+================HUE PRIMER:
+SETONTHIS/Hue/{RNDLIST,1172,1173,1170,1237,1520,1550,1710,1750,1820,1840,1850,1870,1880,1890,1904,1908}
+
+================BASE NPC:
+
+Cougar/BodyValue/401/Female/True/Hue/GETONTHIS,Hue/EQUIP/<Cloak/Movable/False/LootType/Blessed/Name//Hue/GETONTHIS,Hue/ItemID/15352>/HairItemID/{RND,8251,8253}/HairHue/GETONTHIS,Hue/Tamable/False
+
+================RANDOM NAMES:
+
+/Name/{RNDLIST,E'engril,Atoess'y,H'sulund,Hatif'ck,Roth'lye,Dra'an'oiph,Nysoun'u,Et'rothe,Rileass'i,Anialt'u,Rodor'e,Umuis'a,Om'shy,R'dendra,Sam'os'iw,Qu'athny,P'moreng,Ton'unte,A'moran,F'anghat,Ves'ir,Ough'kelo,Untik'ld,Rodol'nn,Sm'istan,Elmiec'w,Ad'urn,Orin'ph,R'estest,Y'lerash,Leraurd'a,Che'ano,Que'lye,Nyseul'y,Voraiz'nt,L'thertia,Lye'ther'ayd,I'tanad,T'cerray,En'und,Ina'et'ish,Delyr'e,Per'nys,Ver'oro,Z'kimund,Ash'um,Sn'angray,Er'ran,Say'ther'ayll,Ang'skel,Ranunn't,Em'say,E'emath,Mor'say,
+
+Danugh'e,Hat'mor'aylt,Sn'essdan,Que'om'uk,Gha'beli,Ad'aty,Mor'umy,Ough'ir,Achound'i,Ray'mor,Ris'lye'yt,Ver'rodi,Nys'kin'ul,Emeyss'ph,Kinould'k,O'ranet,T'endban,Denold'y,Rakuich'i,Umeylt'ph,Os'est,Rothas'e,A'oldny,Oldeer'o,E'athden,Undeuq'ph,Orm'nys'uf,Taiaech'd,Is'ingi,Rh'shyer,Taield'u,Sayayp'a,Ine'gha'aif,Aldaysh'a,Ustaesh'y,Oughayl'a,Rothaes'a,As'kim,N'worest,Old'sula,Ia'shy,Ad'eri,Ir'oldi,Kimeath'e,V'mosbur,Os'rise,Dra'tury,Kel'urn,Sm'umsay,Os'nala,Enth'del,U'umran,Aduill'd,End'imi,M'irden,Is'tor,Ny'shya,A'angaugh,Ton'usk'iess,Y'onper,C'lerrad,Ildear'r,Augh'hono,Hon'ther'ak,Achin'a}
+
+================NPCS:
+====Denwatchers (Guards)
+/DamageMin/25/DamageMax/45/SKILL,Wrestling/350/SKILL,Tactics/275/Dex/250/STR/200/HitsMaxSeed/150/Hits/150/EQUIP/<Doublet/Hue/2881>/EQUIP/<LeatherLegs/Hue/2881/LootType/Blessed>/EQUIP/<HalfApron/LootType/Blessed/Hue/1172/ItemID/11112/name/Loincloth>/EQUIP/<Boots/Hue/1172/LootType/Blessed/ItemID/12228/Name/Woodland Boots>/EQUIP/<LeatherArms/LootType/Blessed/Hue/1172/Name/Woodland arms/ItemID/11116>/EQUIP/<LeafShield/Loottype/Blessed>/EQUIP/<goldring/hue/1173/LootType/Blessed/ItemID/11552/Name/Woodland dagger>/EQUIP/<LeatherGorget/Hue/1172/ItemID/11113/LootType/Blessed>/EQUIP/<BearMask/Hue/1172>/Title/the Denwatcher
+
+====Wardens (Elite Guards)
+/DamageMin/45/DamageMax/65/SKILL,Tactics/375/SKILL,Wrestling/400/Dex/300/STR/250/HitsMaxSeed/350/Hits/350/EQUIP/<Doublet/Hue/2967>/EQUIP/<LeatherLegs/Hue/2967/LootType/Blessed>/EQUIP/<HalfApron/LootType/Blessed/Hue/2990/ItemID/11112/name/Loincloth>/EQUIP/<Boots/Hue/2990/LootType/Blessed/ItemID/12228/Name/Woodland Boots>/EQUIP/<LeatherArms/LootType/Blessed/Hue/2990/Name/Woodland arms/ItemID/11116>/EQUIP/<LeafShield/Loottype/Blessed>/EQUIP/<goldring/hue/1173/LootType/Blessed/ItemID/11570/Name/Woodland dagger>/EQUIP/<LeatherGorget/Hue/2990/ItemID/11113/LootType/Blessed>/EQUIP/<BearMask/Hue/2990>/Title/the Warden
+
+====Gatherers (lumberjack camp)
+/Str/150/Dex/150/SKILL,Tactics/100/SKILL,Wrestling/150/HitsMaxSeed/125/Hits/125/EQUIP/<LeatherChest/ItemID/12229/LootType/Blessed/Hue/1172/Name/Harvester's leather jerkin>/EQUIP/<LeatherArms/LootType/Blessed/ItemID/12232/Hue/1172/Name/Harvester's sleeves>/EQUIP/<LeatherLegs/ItemID/12233/LootType/Blessed/Hue/1172>/EQUIP/<Boots/Hue/2881>/EQUIP/<Bandana/Hue/2881>/EQUIP/<HalfApron/Hue/2881/LootType/Blessed/Name/Loincloth/ItemID/11112>/EQUIP/<goldring/LootType/Blessed/ItemID/3907>/Title/the Gatherer
+
+====Base TownsFolk:
+/Karma/0/UNEQUIP,Shirt,delete/UNEQUIP,Pants,delete/UNEQUIP,MiddleTorso,delete/UNEQUIP,Shoes,delete/STR/150/DEX/150/SKILL,Tactics/100/SKILL,Wrestling/100/HitsMaxSeed/100/Hits/100/EQUIP/<Shirt/ItemID/12661/LootType/Blessed/Hue/{RND,2009,2012}/Name/Shirt>/EQUIP/<LongPants/ItemID/12227/LootType/Blessed/Hue/{RND,2009,2012}/Name/Hide pants>/EQUIP/<HalfApron/ItemID/11112/Hue/2881/LootType/Blessed>/EQUIP/<cap/hue/{RND,2009,2013}>
+
+
+=================SPECIAL NPCs:
+====??
+/DamageMin/50/DamageMax/80/SKILL,Tactics/400/SKILL,Wrestling/450/DEX/350/STR/300/HitsMaxSeed/500/Hits/500/EQUIP/<LeatherPants/Hue/2009/ItemID/10118/LootType/Blessed/Name/Reinforced woodland leggings>/EQUIP/<HalfApron/Hue/2960/ItemID/11112/Name/LoinCloth/LootType/Blessed>/EQUIP/<FancyShirt/LootType/Blessed/Hue/2960/ItemID/12662/Name/Patterned shirt>/EQUIP/<LeatherArms/Hue/649/ItemID/10110/LootType/Blessed/Name/Reinforced woodland arms>/EQUIP/<LeatherGorget/Itemid/10106/Hue/649/LootType/Blessed/Name/Battle mask>/EQUIP/<FloppyHat/ItemID/10103/Name/Hat/LootType/Blessed>/EQUIP/<LeatherGloves/Hue/1172/ItemID/10130/LootType/Blessed/Name/Clawed gloves>/EQUIP/<GoldRing/LootType/Blessed/Hue/2990/ItemID/10155>

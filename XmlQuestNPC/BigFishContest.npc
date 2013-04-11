@@ -1,0 +1,157 @@
+<?xml version="1.0" standalone="yes"?>
+<XmlQuestNPC>
+  <NPC>
+    <Name>Fishing Contest Official</Name>
+    <Running>True</Running>
+    <ProximityRange>3</ProximityRange>
+    <ResetRange>16</ResetRange>
+    <AllowGhost>False</AllowGhost>
+    <SpeechPace>10</SpeechPace>
+    <ResetTime>1</ResetTime>
+    <ConfigFile>BigFishContest</ConfigFile>
+    <SpeechEntries>10</SpeechEntries>
+  </NPC>
+  <SpeechEntry>
+    <EntryNumber>0</EntryNumber>
+    <ID>0</ID>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>10</EntryNumber>
+    <ID>10</ID>
+    <Text>Hail, {GETONTRIGMOB,name}.</Text>
+    <Condition>AMOUNTCARRIED,BigFish&gt;0</Condition>
+    <DependsOn>-2</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>20</EntryNumber>
+    <ID>20</ID>
+    <Keywords>hail,hello,hi,howdy,sup,hola,hey,yo,aye,yeah,yea,yep</Keywords>
+    <DependsOn>10</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+    <Gump>GUMP,What a big fish you have!,4/My word, you've caught a monstrous fish!  Do you want to turn in this fish for the contest?;Weigh my fish!;accept;No, I'm going to eat it.;decline</Gump>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>30</EntryNumber>
+    <ID>30</ID>
+    <Text>As you wish. *frowns*</Text>
+    <Keywords>decline</Keywords>
+    <DependsOn>20</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>40</EntryNumber>
+    <ID>40</ID>
+    <Text>{RNDLIST,Lets toss it on the scales.,And the final weight is...,Lets see what she weighs.,The fish weighs...,It weighs in at...,The scales are saying...,Looks like it weighs...}</Text>
+    <Keywords>accept</Keywords>
+    <Condition>AMOUNTCARRIED,BigFish&gt;0</Condition>
+    <DependsOn>20</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>50</EntryNumber>
+    <ID>50</ID>
+    <Text>Hmm, only {GETONCARRIED,,BigFish,weight} stones. It's smaller than it looked. Here's a consolation prize.</Text>
+    <Action>TAKEBYTYPE,1,1/BigFish ; GIVE/&lt;gold/amount/{RND,1,15}&gt; ; GIVE/&lt;fishingbait/amount/RND,1,2&gt;</Action>
+    <Condition>GETONCARRIED,,BigFish,weight&lt;50 &amp; AMOUNTCARRIED,BigFish&gt;0</Condition>
+    <DependsOn>40</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>60</EntryNumber>
+    <ID>60</ID>
+    <Text>Not too bad. {GETONCARRIED,,BigFish,weight} stones.  Nothing to get excited about, but keep trying!</Text>
+    <Action>TAKEBYTYPE,1,1/BigFish ; GIVE/&lt;gold/amount/{RND,10,25} ; GIVE/&lt;fishingbait/amount/RND,3,5&gt;</Action>
+    <Condition>GETONCARRIED,,BigFish,weight&gt;49 &amp; GETONCARRIED,,BigFish,weight&lt;100 &amp; AMOUNTCARRIED,BigFish&gt;0</Condition>
+    <DependsOn>40</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>70</EntryNumber>
+    <ID>70</ID>
+    <Text>Nice! {GETONCARRIED,,BigFish,weight} stones! This thing is huge, but it's not going to win any contests.  Keep at it, though!</Text>
+    <Action>TAKEBYTYPE,1,1/BigFish ; GIVE/&lt;gold/amount/{RND,25,35}&gt; ; GIVE,.15/specialfishingnet ; GIVE/&lt;fishingbait/amount/RND,5,10&gt;</Action>
+    <Condition>GETONCARRIED,,BigFish,weight&gt;99 &amp; GETONCARRIED,,BigFish,weight&lt;150 &amp; AMOUNTCARRIED,BigFish&gt;0</Condition>
+    <DependsOn>40</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>80</EntryNumber>
+    <ID>80</ID>
+    <Text>What a monster! {GETONCARRIED,,BigFish,weight} stones!  Here's a prize for such a huge fish.  Come back with an even bigger one and I'll mount it for you.</Text>
+    <Action>TAKEBYTYPE,1,1/BigFish ; GIVE/&lt;gold/amount/{RND,40,50}&gt; ; GIVE,.55/specialfishingnet ; GIVE/&lt;fishingbait/amount/RND,7,12&gt;</Action>
+    <Condition>GETONCARRIED,,BigFish,weight&gt;149 &amp; GETONCARRIED,,BigFish,weight&lt;180 &amp; AMOUNTCARRIED,BigFish&gt;0</Condition>
+    <DependsOn>40</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>90</EntryNumber>
+    <ID>90</ID>
+    <Text>Amazing! {GETONCARRIED,,BigFish,weight} stones! How did this thing fit in your boat? Here, let me mount it for you!</Text>
+    <Action>GIVE/&lt;item,{RNDLIST,7785,7778}/name/A {RNDLIST,monstrous,gigantic,huge,gargantuan,massive}, {GETONCARRIED,,BigFish,weight}-stone {RNDLIST,tuna,catfish,marlin,sailfin,swordfish,snapper} caught by {GETONTRIGMOB,name}/movable/true/weight/5&gt; ; TAKEBYTYPE,1,1/BigFish ; GIVE/&lt;fishingbait/amount/RND,10,15&gt;</Action>
+    <Condition>GETONCARRIED,,BigFish,weight&gt;179 &amp; AMOUNTCARRIED,BigFish&gt;0</Condition>
+    <DependsOn>40</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+</XmlQuestNPC>

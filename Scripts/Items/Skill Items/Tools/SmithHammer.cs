@@ -1,0 +1,40 @@
+namespace Server.Items
+{
+	[Flipable( 0x13E4, 0x13E3 )]
+    public class SmithHammer : BaseSmithHammer
+	{
+		//public override CraftSystem CraftSystem{ get{ return DefBlacksmithy.CraftSystem; } }
+
+		[Constructable]
+		public SmithHammer() : base( 0x13E3 )
+		{
+			Weight = 8.0;
+			Layer = Layer.OneHanded;
+		}
+
+		[Constructable]
+		public SmithHammer( int uses ) : base( uses, 0x13E3 )
+		{
+			Weight = 8.0;
+			Layer = Layer.OneHanded;
+		}
+
+		public SmithHammer( Serial serial ) : base( serial )
+		{
+		}
+
+		public override void Serialize( GenericWriter writer )
+		{
+			base.Serialize( writer );
+
+			writer.Write( 0 ); // version
+		}
+
+		public override void Deserialize( GenericReader reader )
+		{
+			base.Deserialize( reader );
+
+			int version = reader.ReadInt();
+		}
+	}
+}

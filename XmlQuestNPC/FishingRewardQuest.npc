@@ -1,0 +1,143 @@
+<?xml version="1.0" standalone="yes"?>
+<XmlQuestNPC>
+  <NPC>
+    <Name>Neville</Name>
+    <Running>True</Running>
+    <ProximityRange>4</ProximityRange>
+    <ResetRange>16</ResetRange>
+    <AllowGhost>False</AllowGhost>
+    <SpeechPace>10</SpeechPace>
+    <ResetTime>0.25</ResetTime>
+    <SpeechEntries>9</SpeechEntries>
+  </NPC>
+  <SpeechEntry>
+    <EntryNumber>0</EntryNumber>
+    <ID>0</ID>
+    <Text>Hello, adventurer. Come back when you're a grandmaster fisher and I'll put you to work.</Text>
+    <Condition>GETONTRIGMOB,skills.fishing.base&lt;100</Condition>
+    <DependsOn>-2</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>10</EntryNumber>
+    <ID>10</ID>
+    <Text>Enough is enough!</Text>
+    <Condition>GETONTRIGMOB,skills.fishing.base=100 &amp; AMOUNTCARRIED,deepseafishingpole=0</Condition>
+    <DependsOn>-2</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>11</EntryNumber>
+    <ID>11</ID>
+    <Text>I trust you like your new fishing pole. Would you like some bait for it?</Text>
+    <Condition>AMOUNTCARRIED,deepseafishingpole&gt;0</Condition>
+    <DependsOn>-2</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>20</EntryNumber>
+    <ID>20</ID>
+    <Text>{GETONTRIGMOB,name}! Would you like a job?</Text>
+    <Condition>GETONTRIGMOB,skills.fishing.base=100</Condition>
+    <DependsOn>10</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>30</EntryNumber>
+    <ID>30</ID>
+    <Keywords>yeah,yea,ye,yep,yes,aye,si,ok,okay,sure,k,indeed</Keywords>
+    <DependsOn>20</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+    <Gump>GUMP,Sea Serpents on a Boat!,4/I've had it with these mongbat-loving sea serpents on my wind-blasted boat.  It's time we got rid of those nuisances!  I want you to go out on a boat and fish up a bunch of them and kill them!  Bring me their scales as proof of the deed.;I'll do it!;accept;I'm scared of them!;decline</Gump>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>40</EntryNumber>
+    <ID>40</ID>
+    <Text>Finally!  A fisherman who's not afraid of a fight!</Text>
+    <Keywords>accept</Keywords>
+    <Action>GIVE/&lt;questholder/AutoReward/true/canseereward/true/Objective1/COLLECT,bluescales,3000/repeatable/false/name/Sea Serpents on a Boat!/TitleString/Sea Serpents on a Boat/rewardstring/fishingpoleticket/notestring/Neville wants you to kill sea serpents to make the ocean safe for fishermen.  Collect 3000 scales as proof of your deeds.&gt;</Action>
+    <Condition>GETONTRIGMOB,skills.fishing.base=100</Condition>
+    <DependsOn>30</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>50</EntryNumber>
+    <ID>50</ID>
+    <Text>Another scaredy cat.  Why must we fishermen be so cowardly?</Text>
+    <Keywords>decline</Keywords>
+    <DependsOn>30</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>70</EntryNumber>
+    <ID>70</ID>
+    <Keywords>yes,yep,yeah,yea,sure,ok,okay,aye,indeed,si</Keywords>
+    <DependsOn>11</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+    <Gump>GUMP,Scales for Bait,4/I see you're committed to ridding the seas of those blasted serpents.  Let me show you my thanks with some of this special bait.  With it, you can catch many exciting types of fish!;Trade 100 scales for 300 bait.;tradebait;Keep my scales.;notradebait</Gump>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>80</EntryNumber>
+    <ID>80</ID>
+    <Text>Here you are, 300 pieces of bait.</Text>
+    <Keywords>tradebait</Keywords>
+    <Action>TAKEBYTYPE,1,100/bluescales ; GIVE/&lt;fishingbait/amount/300&gt;</Action>
+    <Condition>AMOUNTCARRIED,bluescales&gt;99</Condition>
+    <DependsOn>70</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+</XmlQuestNPC>

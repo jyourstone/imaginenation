@@ -1,0 +1,58 @@
+<?xml version="1.0" standalone="yes"?>
+<XmlQuestNPC>
+  <NPC>
+    <Name>PreMature Starter (2-3 players).  Don't delete</Name>
+    <Running>True</Running>
+    <ProximityRange>7</ProximityRange>
+    <ResetRange>16</ResetRange>
+    <AllowGhost>False</AllowGhost>
+    <SpeechPace>10</SpeechPace>
+    <ResetTime>0</ResetTime>
+    <SpeechEntries>3</SpeechEntries>
+  </NPC>
+  <SpeechEntry>
+    <EntryNumber>0</EntryNumber>
+    <ID>0</ID>
+    <Keywords>start</Keywords>
+    <Condition>GETONNEARBY,9,PlayerManagement,XMLSpawner,SequentialSpawn&gt;1</Condition>
+    <DependsOn>-2</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+    <Gump>GUMP,Start Game Now?,4/Start the game with only {GETONNEARBY,9,PlayerManagement,XMLSpawner,SequentialSpawn} players?  You can begin as long as there are 2 or more players.;No, I'll wait for more players.;Decline;Yes, I can't wait to blow stuff up.;EarlyAccept</Gump>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>1</EntryNumber>
+    <ID>1</ID>
+    <Keywords>start</Keywords>
+    <Action>SETONTRIGMOB/SENDMSG,43/There must be at least 2 players to start a game and the game can't be running yet.</Action>
+    <Condition>GETONNEARBY,9,PlayerManagement,XMLSpawner,SequentialSpawn&lt;2</Condition>
+    <DependsOn>-2</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>10</EntryNumber>
+    <ID>10</ID>
+    <Keywords>EarlyAccept</Keywords>
+    <Action>SETONNEARBY,9,4PlayerGameStart,XMLSpawner/SequentialSpawn/2/DoRespawn/True</Action>
+    <Condition>GETONNEARBY,9,PlayerManagement,XMLSpawner,SequentialSpawn&gt;1 &amp; GETONNEARBY,8,Bomberman Stone,Bombermangame,Running=False</Condition>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+</XmlQuestNPC>

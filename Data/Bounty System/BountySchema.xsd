@@ -1,0 +1,19 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xsd:complexType name="MobileType">
+		<xsd:sequence>
+			<xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="Serial" minOccurs="1" maxOccurs="1" type="xsd:int"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="BountyType">
+		<xsd:sequence>
+			<xsd:element name="Owner" type="MobileType" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="Wanted" type="MobileType" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="Requested" type="MobileType" minOccurs="0" maxOccurs="unbounded" />
+			<xsd:element name="Accepted" type="MobileType" minOccurs="0" maxOccurs="unbounded" />
+			<xsd:element name="Price" type="xsd:int" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="ExpireTime" type="xsd:dateTime" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="Bounty" type="BountyType"></xsd:element>
+</xsd:schema>

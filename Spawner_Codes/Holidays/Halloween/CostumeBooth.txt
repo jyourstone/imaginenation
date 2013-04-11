@@ -1,0 +1,12 @@
+ProximityRange: 0
+ProximitySound: 583
+SequentialSpawn: 1
+SpawnOnTrigger: True
+
+Max.Per.Sub ### Spawn
+
+1.1.1 #1#
+#CONDITION,GETONTRIGMOB,Mounted=False ; SETONTRIGMOB/ATTACH/XmlMorph,{RNDLIST,3,50,24,154,149,36,42,58,784,153,148,124,130,74,7,57,777,31,776,39,7,17,970,1,54},1/SENDASCIIMSG,1,33/You put on a costume!
+
+1.1.1 #2#
+#CONDITION,GETONTRIGMOB,Mounted=True ; SETONTRIGMOB/SENDASCIIMSG,1,33/You can't put on a costume while mounted!

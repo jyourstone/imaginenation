@@ -1,0 +1,71 @@
+<?xml version="1.0" standalone="yes"?>
+<XmlQuestNPC>
+  <NPC>
+    <Name>Eric</Name>
+    <Running>True</Running>
+    <ProximityRange>3</ProximityRange>
+    <ResetRange>16</ResetRange>
+    <AllowGhost>False</AllowGhost>
+    <SpeechPace>10</SpeechPace>
+    <ResetTime>1</ResetTime>
+    <ConfigFile>TacticsQuest</ConfigFile>
+    <SpeechEntries>4</SpeechEntries>
+  </NPC>
+  <SpeechEntry>
+    <EntryNumber>0</EntryNumber>
+    <ID>0</ID>
+    <Text>We need to thin out these beastmen if we're going to reclaim this town.  Could you help us, adventurer?</Text>
+    <DependsOn>-2</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>10</EntryNumber>
+    <ID>10</ID>
+    <Keywords>yes,yep,yeah,yeh,ye,yea,aye,sure,OK,okay,si</Keywords>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+    <Gump>GUMP,Thinning the Population,4/If we're going to reclaim this town, we need to get rid of some of those blasted beastmen!  If you feel up to the challenge, climb over the wall there and slay as many as you can!  It might teach you a thing or two about Tactics if you do.;I'll kill them, sir.;tacticsaccept;No way. I'm scared.;tacticsdecline </Gump>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>20</EntryNumber>
+    <ID>20</ID>
+    <Text>Begone with ye, coward.  I have no use for you.</Text>
+    <Keywords>tacticsdecline</Keywords>
+    <DependsOn>10</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>30</EntryNumber>
+    <ID>30</ID>
+    <Text>Slay them!</Text>
+    <Keywords>tacticsaccept</Keywords>
+    <Action>GIVE/&lt;questholder/name/Thinning the Population/Autoreward/true/notestring/Kill 30 Lizardmen, 30 Ratmen, 20 Batmen, and 5 Centaurs./Objective1/KILL,lizardman,30/Objective2/KILL,ratman,30/Objective3/KILLNAMED,Batman,20/Objective4/KILL,Centaur,5/TitleString/Thinning the Population/RewardString/@skillbook/bonus/5/RequiresOwner/False/SetOwnerOnPickup/False/Skillname/Tactics/loottype/blessed/MaxValue/100&gt;</Action>
+    <DependsOn>10</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+    <Gump>GUMP,Thinning the Population,0/Kill 30 Lizardmen, 30 Ratmen, 20 Batmen, and 5 Centaurs.</Gump>
+  </SpeechEntry>
+</XmlQuestNPC>

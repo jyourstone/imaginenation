@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="yes"?>
+<XmlQuestNPC>
+  <NPC>
+    <Name>Mase</Name>
+    <Running>True</Running>
+    <ProximityRange>7</ProximityRange>
+    <ResetRange>16</ResetRange>
+    <AllowGhost>False</AllowGhost>
+    <SpeechPace>10</SpeechPace>
+    <ResetTime>0.0166666666666667</ResetTime>
+    <SpeechEntries>2</SpeechEntries>
+  </NPC>
+  <SpeechEntry>
+    <EntryNumber>0</EntryNumber>
+    <ID>0</ID>
+    <Text>{GETONTRIGMOB,Name} has {GETONTRIGMOB,[ATTACHMENT,XMLValue,StarWarTokens,Value]} tokens.</Text>
+    <Keywords>balance</Keywords>
+    <DependsOn>-2</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+    <Gump>GUMP,Cash Out?,4/You've earned {GETONTRIGMOB,[ATTACHMENT,XMLValue,StarWarTokens,Value]} tokens so far.  Would you like me to give you the tokens now?  (NOTE- This will reset your balance to 0 and give you actual tokens that you can store in your bank or spend in the reward vending machine);Yes, please.;collecttokens;Not yet.;refusecollection</Gump>
+  </SpeechEntry>
+  <SpeechEntry>
+    <EntryNumber>10</EntryNumber>
+    <ID>10</ID>
+    <Text>Here you are, {GETONTRIGMOB,Name}!  {GETONTRIGMOB,[ATTACHMENT,XMLValue,StarWarTokens,Value]} tokens.</Text>
+    <Keywords>collecttokens</Keywords>
+    <Action>SETONTRIGMOB/ADD/StarWarToken,{GETONTRIGMOB,[ATTACHMENT,XMLValue,StarWarTokens,Value]}/ATTACH/XMLValue,StarWarTokens,0</Action>
+    <Condition>GETONTRIGMOB,[ATTACHMENT,XMLValue,StarWarTokens,Value&gt;0</Condition>
+    <DependsOn>0</DependsOn>
+    <Pause>1</Pause>
+    <PrePause>-1</PrePause>
+    <LockConversation>True</LockConversation>
+    <IgnoreCarried>False</IgnoreCarried>
+    <AllowNPCTrigger>False</AllowNPCTrigger>
+    <SpeechStyle>Regular</SpeechStyle>
+    <SpeechHue>-1</SpeechHue>
+  </SpeechEntry>
+</XmlQuestNPC>
