@@ -15,4 +15,8 @@ UO Architect Server
 
 For best results, use a web server and configure all URL's and SQL files properly.
 
+I want to thank everyone who contributed to Imagine Nation, developers, staff and players.
+Special thanks goes to Coldrake, who founded Imagine Nation, and maka, who did most
+of the work in the beginning and built the ground of this server.
+
 /Taran
