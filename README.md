@@ -4,11 +4,11 @@ Imagine Nation
 Scripts and source code for the RunUO server Imagine Nation. 
 Using RunUO SVN version 836 as of 2012-02-26, although heavily modified.
 
-Statics and artwork can be downloaded from this link: https://www.dropbox.com/s/x6qxxoigszuzx3j/Muls.zip
-
-The latest world save (without accounts) before the server shut down can be downloaded from this link: https://www.dropbox.com/s/55ae4dkzs5h6a5s/Saves.zip
-
-The SQL databases can be downloaded here: https://www.dropbox.com/s/vsz2mw545pzaign/SQL.zip
+The following files can be downloaded from here: https://www.dropbox.com/sh/s5nmspn8gjg2j4j/g6mfSTZh-m
+* Statics and artwork (Muls.zip)
+* Latest world save (without accounts) before the server shut down (Saves.zip)
+* SQL databases (SQL.zip)
+* Fixes if you have map or graphic issues like missing artwork etc. or if Razor won't start (Fixes.zip)
 
 To compile the source simply run compile.bat (requires .NET framework 3.5)
 
