@@ -12,8 +12,7 @@ The following files are downloaded separately
 
 To compile the source simply run compile.bat (requires .NET framework 3.5)
 
-I will NOT offer any support for this. If you can't get it running, use google.
-If you still can't get it running, then you shouldn't run a server.
+I do not offer any support for this.
 
 Third party tools installed:
 UO Architect Server
